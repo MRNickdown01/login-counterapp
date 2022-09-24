@@ -29,6 +29,7 @@ const CounterApp: React.FC = () => {
           {count}
         </h1>
         <IonImg src="https://img.freepik.com/free-vector/counting-stars-concept-illustration_114360-4729.jpg?w=740&t=st=1664000737~exp=1664001337~hmac=51a27db1e449ef360410d4b4da2573003ad7503ae438219cdbec3d439a2aaec9"></IonImg>
+
         <IonFab vertical="bottom" horizontal="end" slot="fixed">
           <IonFabButton onClick={() => setCount(count + 1)}>
             <IonIcon icon={add}></IonIcon>
@@ -40,7 +41,9 @@ const CounterApp: React.FC = () => {
           </IonFabButton>
         </IonFab>
         <IonFab vertical="bottom" horizontal="center" slot="fixed">
-          <IonFabButton onClick={() => setCount(0)}>Rest</IonFabButton>
+          <IonFabButton color="success" onClick={() => setCount(0)}>
+            Reset
+          </IonFabButton>
         </IonFab>
       </IonContent>
     </IonPage>
